@@ -97,6 +97,26 @@ Each milestone is committed in Git with clear, descriptive messages.
 
 ---
 
+## 🔒 Ignored & Excluded Files (Security-Conscious Practice)
+
+Although this project does **not contain real sensitive data**, all backup-related files are excluded from version control to demonstrate good cybersecurity and Git hygiene practices.
+
+These ignored files include:
+
+- ✅ `backups/*.tar.gz` — compressed archive outputs  
+- ✅ `backups/*.gpg` — encrypted backups using GPG  
+- ✅ `backup.log` — runtime logging output  
+- ✅ Temporary files like `*.swp`, `*.tmp`, etc.
+
+Some `.tar.gz` files may appear in **early phases (e.g., Phase 2)** for demonstration only.  
+All other output files are intentionally excluded using `.gitignore`.
+
+> 🧠 Treating output as sensitive — even when it's not — reflects real-world awareness of data protection and clean Git workflows.
+
+View the full ignore list in [`.gitignore`](./.gitignore).
+
+---
+
 ## 💼 Why This Project Matters
 
 This project was built as part of my LFCS training and demonstrates:
@@ -108,6 +128,24 @@ This project was built as part of my LFCS training and demonstrates:
 - Git-based workflow and documentation
 
 It’s designed to reflect production-grade sysadmin responsibilities — and show I can build reliable tools from scratch.
+
+---
+
+## 📸 Screenshots (Project Output Preview)
+
+This section will include visual proof of each backup and restore step.
+
+| Step | Description | Screenshot |
+|------|-------------|------------|
+| 1️⃣  | Archive created with `tar` | _📷 Placeholder — coming soon_ |
+| 2️⃣  | Encrypted using GPG (`--symmetric`, AES256) | _📷 Placeholder — coming soon_ |
+| 3️⃣  | Uploaded to Azure with `azcopy` | _📷 Placeholder — coming soon_ |
+| 4️⃣  | Email notification sent | _📷 Placeholder — coming soon_ |
+| 5️⃣  | Log output written to `backup.log` | _📷 Placeholder — coming soon_ |
+| 6️⃣  | Restore: decrypt + extract | _📷 Placeholder — coming soon_ |
+| 7️⃣  | Verified output using `diff` | _📷 Placeholder — coming soon_ |
+
+> ✅ Screenshots will be added gradually as each phase is implemented and tested.
 
 ---
 
