@@ -137,7 +137,7 @@ This section will include visual proof of each backup and restore step.
 
 | Step | Description | Screenshot |
 |------|-------------|------------|
-| 1️⃣  | Archive created with `tar` | _📷 Placeholder — coming soon_ |
+| 1️⃣  | Archive created with `tar` | ![Step 1 - Backup created](screenshots/01_backup_created_after_script_run.png) |
 | 2️⃣  | Encrypted using GPG (`--symmetric`, AES256) | _📷 Placeholder — coming soon_ |
 | 3️⃣  | Uploaded to Azure with `azcopy` | _📷 Placeholder — coming soon_ |
 | 4️⃣  | Email notification sent | _📷 Placeholder — coming soon_ |
